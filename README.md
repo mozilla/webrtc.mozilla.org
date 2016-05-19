@@ -1,4 +1,13 @@
-# [HTML5 Blank](http://html5blank.com)
+# webrtc.mozilla.org
+
+Wordpress website for WebRTC blog built using [HTML5 Blank](http://html5blank.com)
+
+To get started:
+
+1. Enable theme
+2. @todo: more steps coming soon for adding custom fields
+
+---
 
 Powerful shell for rapidly deploying your WordPress projects.
 
