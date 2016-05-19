@@ -1,0 +1,44 @@
+// home.scss
+// -----------------------------------------------------------------
+
+.home {
+  .home-hero {
+    margin: 50px 0 0;
+    color: #fff;
+    h2 {
+      font-family: $font-family-branding;
+      font-weight: 600;
+      font-size: 42px;
+      margin: 0 0 15px;
+      line-height: 1.25em;
+    }
+    .actions {
+      margin-top: 40px;
+      .btn-outline {
+        margin-right: 27px;
+      }
+    }
+    .illustration {
+      width: 100%;
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

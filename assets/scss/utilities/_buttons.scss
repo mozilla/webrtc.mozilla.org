@@ -1,0 +1,84 @@
+// buttons.scss
+// -----------------------------------------------------------------
+
+.btn-strip {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  box-shadow: none;
+  color: #fff;
+  padding: 4px 18px 4px 12px;
+  font-size: 16px;
+  font-weight: 700;
+  &:before {
+    content: '';
+    background: url('assets/img/icon-arrow-r-white.svg');
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background-size: cover;
+    margin-right: 15px;
+  }
+  &:hover {
+    background: #fff;
+    color: $link-color;
+    text-decoration: none;
+    &:before {
+      background: url('assets/img/icon-arrow-r-blue.svg');
+      background-size: cover;
+    }
+  }
+}
+
+// .btn-primary {
+//   background-color: #6E9C5C;
+//   #gradient > .vertical(#80B068,#659457);
+//   border-color: transparent;
+//   font-size: 24px;
+//   font-weight: 700;
+//   &:hover {
+//     background: #659457;
+//     border-color: transparent;
+//   }
+//   &:active {
+//     background: #659457;
+//     border-color: transparent;
+//     &:hover {
+//       background: #659457;
+//       border-color: transparent;
+//     }
+//   }
+//   &:disabled {
+//     background-color: #6E9C5C;
+//     border-color: transparent;
+//     &:hover {
+//       background: #659457;
+//       border-color: transparent;
+//     }
+//   }
+// }
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

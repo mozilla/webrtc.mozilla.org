@@ -1,0 +1,84 @@
+// learn-more.scss
+// -----------------------------------------------------------------
+
+.page-template-template-learn-more {
+  .page-feature {
+    .narrative-title {
+      margin-left: -50px;
+      margin-right: -50px;
+    }
+  }
+  .webrtc-summary {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 60px;
+  }
+  .column-one {
+    .column-title {
+      .column-icon {
+        background-image: url('assets/img/icon-partner.svg');
+        width: 35px;
+      }
+    }
+  }
+  .column-two {
+    .column-title {
+      .column-icon {
+        background-image: url('assets/img/icon-contributions.svg');
+        width: 22px;
+        height: 35px;
+      }
+    }
+  }
+  .companies {
+    a {
+      display: block;
+      border-bottom: 5px solid #fff;
+      height: 130px;
+      line-height: 130px;
+      background: #f7f7f7;
+      text-align: center;
+      &:first-child {
+        border-radius: 12px 12px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 12px 12px;
+        border: 0;
+      }
+    }
+    .mozilla {
+      img {
+        height: 40px;
+      }
+    }
+    .telenor {
+      img {
+        height: 81px;
+      }
+    }
+    .cisco {
+      img {
+        height: 88px;
+      }
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

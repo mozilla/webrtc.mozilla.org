@@ -1,0 +1,40 @@
+// get-involved.scss
+// -----------------------------------------------------------------
+
+.page-template-template-get-involved {
+  .column-one {
+    .column-title {
+      .column-icon {
+        background-image: url('assets/img/icon-partner.svg');
+        width: 35px;
+      }
+    }
+  }
+  .column-two {
+    .column-title {
+      .column-icon {
+        background-image: url('assets/img/icon-get-involved.svg');
+        width: 25px;
+      }
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

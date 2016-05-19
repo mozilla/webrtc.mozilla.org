@@ -1,0 +1,99 @@
+// site-header.scss
+// -----------------------------------------------------------------
+
+.site-header {
+  background-image: url('assets/img/header-bg.png');
+  background-position: 50% 0;
+  padding: 60px 0;
+  @include clearfix
+  .tabzilla-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+  }
+  &:before {
+    content: '';
+    height: 3px;
+    width: 100%;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 0;
+  }
+  .search-toggle {
+    border: 0;
+    background: 0;
+    box-shadow: none;
+    padding: 12.5px 20px;
+    margin: 0;
+    float: right;
+  }
+  .navbar {
+    margin: 0;
+    transition: background 50ms;
+    border-radius: 0;
+  }
+  .navbar-brand {
+    font-family: $font-family-branding;
+    font-weight: 500;
+    font-size: 40px;
+    //transition: font-size 50ms;
+  }
+  .navbar-nav {
+    li {
+      a {
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .current-menu-item {
+      & > a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#sticky-anchor {
+
+}
+
+.site-header {
+  .navbar.shrink {
+    background: darken($brand-primary, 15%);
+    .navbar-brand {
+      font-size: 30px;
+    }
+  }
+  .navbar.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

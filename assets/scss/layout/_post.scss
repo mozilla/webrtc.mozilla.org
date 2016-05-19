@@ -1,0 +1,91 @@
+// post.scss
+// -----------------------------------------------------------------
+
+.type-post {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  .date {
+    color: #a3a3a3;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .post-title {
+    font-size: 42px;
+    margin: 0 0 20px;
+    a {
+      color: $text-color;
+    }
+  }
+  .author {
+    font-size: 14px;
+    font-style: italic;
+    margin: 0 0 40px;
+    display: block;
+    a {
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+  h3, 
+  h4 {
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+  img[class*="wp-image-"] {
+    @include img-responsive();
+    margin: 0 0 25px;
+  }
+  .tags {
+    margin-top: 50px;
+    img {
+      margin-right: 12px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin-right: 3px;
+        a {
+          display: block;
+          font-size: 14px;
+          font-weight: 400;
+          background: #E9F6FC;
+          padding: 4px 12px;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}
