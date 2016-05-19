@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page" transform="translate(-1244.000000, -3920.000000)">
+            <g id="SECONDARY-ACTIONS" transform="translate(-11.000000, 3802.000000)">
+                <g id="Group-4" transform="translate(1043.000000, 110.000000)">
+                    <g id="Group-11" transform="translate(212.000000, 8.000000)">
+                        <use id="Oval-18" stroke="#0095DD" mask="url(#mask-2)" stroke-width="4" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <path d="M16.6301267,9.02699517 C16.631474,8.81143042 16.5711832,8.62584264 16.4711477,8.46922137 C16.4250034,8.39680509 16.3815536,8.34426118 16.3343988,8.29676957 C16.2869072,8.24961478 16.2343633,8.20616501 16.1777775,8.16911482 C16.0053257,8.05998517 15.819738,7.9996944 15.6210142,7.9996944 C15.6159619,7.9996944 10.0648327,8.00070486 10.0648327,8.00070486 C9.50975349,8.00070486 9.05437295,8.4560854 9.05437295,9.01116463 C9.05437295,9.56658069 9.50975349,10.0216244 10.0648327,10.0216244 L13.1817643,10.0216244 L8.29518084,14.9055133 C7.90177517,15.298919 7.90177517,15.9412346 8.29518084,16.3346403 C8.68858651,16.7280459 9.33090211,16.7280459 9.72430778,16.3346403 L14.6081967,11.4507513 L14.6081967,14.5676829 C14.6081967,15.1227622 15.0632404,15.5781427 15.6186565,15.5781427 C16.175083,15.5767954 16.6301267,15.1227622 16.6301267,14.5663357 L16.6301267,9.02699517 Z" id="Page-1" fill="#0095DD" transform="translate(12.315138, 12.314694) rotate(-315.000000) translate(-12.315138, -12.314694) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

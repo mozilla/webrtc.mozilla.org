@@ -1,0 +1,76 @@
+// 404.scss
+// -----------------------------------------------------------------
+
+.error404 {
+  background: #f2f2f2;
+  padding-top: 100px;
+  h1 {
+    margin-top: 0;
+    font-size: 100px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1em;
+    color: $text-color;
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+  }
+  h2 {
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    font-size: 21px;
+    margin: 0 0 50px;
+    color: $text-color;
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+  }
+  // Logo
+  .site-logo {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+    display: block;
+    font-family: $font-family-branding;
+    font-weight: 500;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .error-message {
+    text-align: center;
+    margin-bottom: 100px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {
+
+  .error404 {
+    padding-top: 60px;
+  }
+  .error-message {
+    margin-bottom: 30px;
+  }
+
+}

@@ -1,0 +1,81 @@
+// mixins.scss
+// -----------------------------------------------------------------
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vertical-center-parent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.container-fluid {
+  padding: 0 30px;
+}
+
+.alert {
+  ul {
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.irc-channel {
+  background: #fffaea;
+  display: inline-block;
+  padding: 2px 5px;
+  color: $yellow;
+}
+
+.link-arrow {
+  &:after {
+    content: '';
+    background-image: url('assets/img/icon-link-arrow.svg');
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 8px;
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .container-fluid {
+    padding: 0 15px;
+  }
+
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  .container-fluid {
+    padding: 0 15px;
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

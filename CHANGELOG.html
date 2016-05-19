@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h3 id="html5blankchangelog"><a href="http://html5blank.com">HTML5 Blank</a> Changelog</h3>
+
+<h2 id="1.4.302december2013">1.4.3 (02 December, 2013)</h2>
+
+<ul>
+<li>Update <a href="http://conditionizr.com">conditionizr</a> to version 4.0.0</li>
+<li>Update jQuery to v1.10.2</li>
+<li>Update Google Analytics snippet to <em>new</em> universal snippet</li>
+<li>Improved SVG script</li>
+<li>Removed empty conditionizr asset directories for <code>js</code> and <code>css</code></li>
+<li>Remove redundant Modernizr file, loading from CDN</li>
+</ul>
+
+<h2 id="1.4.215june2013">1.4.2 (15 June, 2013)</h2>
+
+<ul>
+<li>Add <em>font-size:62.5%;</em> to the HTML element in CSS for <em>rem</em> (relative-ems) sizing</li>
+<li>Update jQuery 1.9.1 to 1.10.1</li>
+</ul>
+
+<h2 id="1.4.126april2013">1.4.1 (26 April, 2013)</h2>
+
+<ul>
+<li>Removed protocol-relative scripts/styles function as causes some disruption on some local development environments</li>
+<li>Removed hard-coded jQuery from footer as was causing issues with plugins that relied on jQuery being enqueued</li>
+<li>Removed jQuery CDN fallback, jQuery 1.9.1 and theme scripts will be enqueued in the &lt;head&gt; from now on to avoid conflicts with WordPress jQuery checks/detects</li>
+</ul>
+
+<h2 id="1.4.009april2013">1.4.0 (09 April, 2013)</h2>
+
+<ul>
+<li>Move pagination into it&#8217;s own file (pagination.php) and include in necessary template files</li>
+<li>Enhanced clearfix in CSS to micro clearfix hack (works by using parent element for clear)</li>
+<li>Change all HTML structural comments to lower case for cleaner look</li>
+<li>Add apple-touch-icon-precomposed to &lt;head&gt;</li>
+<li>Moved favicon.ico to &#8216;img/icons&#8217;</li>
+<li>Moved new apple touch icon to &#8216;img/icons&#8217;</li>
+<li>Remove Conditionizr default &lt;head&gt; setup and add config URL (cleaner code from install) please see <a href="http://conditionizr.com/docs.html">conditionizr</a> for configuration</li>
+<li>Reordered some meta, links in &lt;head&gt; for better readability/consistency</li>
+<li>Add a few structural (but empty) classes into CSS for fast styling upon install</li>
+<li>Few CSS comments added to label areas/components better</li>
+</ul>
+
+<h2 id="1.3.907april2013">1.3.9 (07 April, 2013)</h2>
+
+<ul>
+<li>Added WAI-ARIA landmark roles to enrich semantics and improve accessibility. <a href="https://github.com/staceycordoni">Stacey Cordoni</a> <span class="externalcitation">[#32]</span>(https://github.com/toddmotto/html5blank/pull/32)</li>
+<li>Added WAI-ARIA &#8216;role=button&#8217; to search form &lt;button&gt;</li>
+<li>Upgrade search input type from &#8216;type=text&#8217; to &#8216;type=search&#8217; for better use of HTML5 alongside WAI-ARIA</li>
+</ul>
+
+<h2 id="1.3.802april2013">1.3.8 (02 April, 2013)</h2>
+
+<ul>
+<li>Load Modernizr from CloudFlare CDN (same as Conditionizr)</li>
+<li>Load only Conditionizr and Modernizr through the &lt;head&gt;, with Conditionizr call too.</li>
+<li>Load jQuery CDN (Google) in footer, with jQuery CDN fallback (CloudFlare)</li>
+<li>Separated WordPress script enqueue to load Conditionizr, Modernizr in head: &#8216;function html5blank_header_scripts()&#8217;</li>
+<li>Hard-coded jQuery and CDN fallback into footer.php above custom theme scripts, more reliable fallback method</li>
+<li>Load custom theme scripts in footer: &#8216;function html5blank_footer_scripts()&#8217;</li>
+<li>Loading scripts before closing &lt;/body&gt; tag is best practice and not seen often in WordPress sites</li>
+<li>Lowercase &lt;!doctype html&gt; in header.php</li>
+<li>Remove empty line at end of functions.php</li>
+</ul>
+
+<h2 id="1.3.701april2013">1.3.7 (01 April, 2013)</h2>
+
+<ul>
+<li>Added Portuguese (Brazil) language translation file to /languages/ from <a href="https://github.com/wesllei">Wesllei Henrique</a></li>
+</ul>
+
+<h2 id="1.3.630march2013">1.3.6 (30 March, 2013)</h2>
+
+<ul>
+<li>Protocol relative jQuery and Conditionizr URLs</li>
+<li>Protocol relative URLs for all enqueued scripts and styles</li>
+<li>Added French language translation file to /languages/ from <a href="https://twitter.com/kevinplattret">Kevin Plattret</a></li>
+<li>Fixed search form bug by adding name=&#8220;s&#8221; attribute</li>
+<li>Neater comments for headings in functions.php (same as style.css)</li>
+<li>Add date ordered contributors to ReadMe.</li>
+</ul>
+
+<h2 id="1.3.526march2013">1.3.5 (26 March, 2013)</h2>
+
+<ul>
+<li>Update jQuery CDN to use $_SERVER[&#8216;SERVER_PORT&#8217;] to server HTTPS if needed</li>
+<li>Edit Google Analytics string to cater for SSL/HTTPS (footer.php)</li>
+<li>Added Spanish language translation file to /languages/ from Carlos Pinar</li>
+<li>Indent &lt;head&gt; and &lt;body&gt; elements for better code readability</li>
+<li>Add X-UA-Compatible meta tag to &lt;head&gt; to force Chrome Frame/latest document mode in IE (edge)</li>
+<li>Format the &lt;head&gt; by grouping similar elements</li>
+<li>Enhance footer.php indentation</li>
+<li>Change footer.php fallback text</li>
+<li>Removed HTML comments from comments.php and changed ID to class</li>
+<li>Improve Conditionizr formatting in header.php</li>
+<li>Set Conditionizr scripts/styles to <em>false</em> by default (classes true)</li>
+<li>Change pagination ID to class for better CSS</li>
+<li>Improve indentation in 404.php for child element</li>
+<li>Update screenshot.png</li>
+<li>Update default HTML5 Blank logo and gravatar</li>
+</ul>
+
+<h2 id="1.3.422march2013">1.3.4 (22 March, 2013)</h2>
+
+<ul>
+<li>Update Conditionizr to version 2.2.0</li>
+<li>Replaced &lt;aside&gt; id with a class for better CSS</li>
+<li>Better naming conventions for search form, more class focused</li>
+<li>Removed JavaScript onfocus/onblur events in search input</li>
+<li>Replaced onfocus/onblur events with HTML5 placeholder for &#8216;Search&#8217; (this is fine for non-supporting browsers as the search button indicates it&#8217;s a search input)</li>
+<li>Search &lt;input&gt; has been replaced to a &lt;button&gt; for more flexibility, allows HTML content</li>
+<li>Removed font-smoothing from Opera and Mozilla as no longer supported</li>
+</ul>
+
+<h2 id="1.3.303march2013">1.3.3 (03 March, 2013)</h2>
+
+<ul>
+<li>Hook up Conditionizr to theme Directory using WordPress theme URI hooks</li>
+</ul>
+
+<h2 id="1.3.222february2013">1.3.2 (22 February, 2013)</h2>
+
+<ul>
+<li>Optimise body CSS declaration to shorthand</li>
+<li>Remove inner wrapper inside header element, wrapper now wraps all content</li>
+<li>Added header and footer classes to elements to encourage class styling over element declaration (i.e. header {} always use .header {} class etc.)</li>
+</ul>
+
+<h2 id="1.3.113february2013">1.3.1 (13 February, 2013)</h2>
+
+<ul>
+<li>Restructured CSS file, better architecture</li>
+<li>Focused CSS document on a more OOCSS approach (part of restructure)</li>
+<li>Split CSS into; Main, Structure, Pages, Images, Typography, Responsive, Misc, Print</li>
+<li>Moved away from single-line CSS formatting to multiple-line formatting for clearer code</li>
+<li>CSS indentation formatting, new lines for shared selectors</li>
+<li>Update jQuery to version 1.9.1, Google CDN and CloudFlare CDN</li>
+<li>Update Conditionizr to CDNJS CloudFlare v2.1.1</li>
+<li>Removed mediaqueries.min.js, do we really need older browsers to be responsive, HTML5Shiv (built-in Modernizr) is enough</li>
+<li>Updated scripts.js to ride off Modernizr.svg feature detect and remove custom script detect</li>
+</ul>
+
+<h2 id="1.3.009february2013">1.3.0 (09 February, 2013)</h2>
+
+<ul>
+<li>Remove jquery.min.js &#8216;local&#8217; fallback from /js/ folder, simply fallback to another CDN (CloudFlare), see footer.php, saves code and maintenance across all sites</li>
+<li>Remove Google Analytics and jQuery fallback from functions.php injection, added manually in footer.php</li>
+<li>Setup Conditionizr to supply an HTML5Shim to Less Than IE9 browsers</li>
+<li>Updates Conditionizr to v1.2.0, enhanced retina detection and unlimited &#8216;customScript&#8217;, for polyfill usage (e.g. using respond.js and html5shim together)</li>
+<li>Added Romanian language translation file to /languages/</li>
+</ul>
+
+<h2 id="1.2.903february2013">1.2.9 (03 February, 2013)</h2>
+
+<ul>
+<li>Readded <a href="Conditionizr">//conditionizr.com</a>, the raw JavaScript version 50% faster, previously removed to work on jQuery-free Conditionizr</li>
+</ul>
+
+<h2 id="1.2.830january2013">1.2.8 (30 January, 2013)</h2>
+
+<ul>
+<li>Added Google Analytics DNS Prefetch to header.php to reduce <a href="//www.chromium.org/developers/design-documents/dns-prefetching">DNS latency</a></li>
+</ul>
+
+<h2 id="1.2.723january2013">1.2.7 (23 January, 2013)</h2>
+
+<ul>
+<li>Update to jQuery 1.9.0</li>
+<li>Removed <a href="http://conditionizr.com">Conditionizr</a></li>
+<li>Remove Apple Touch Icons</li>
+</ul>
+
+<h2 id="1.2.624december2012">1.2.6 (24 December, 2012)</h2>
+
+<ul>
+<li><a href="http://conditionizr.com">Conditionizr</a> legacy script and style loader added
+
+<ul>
+<li>Conditional statements removed from HTML tag (HTML classes added dynamically with Conditionizr)</li>
+<li>Conditional statement for mediaqueries.min.js removed (added dynamically with Conditionizr, included inside scripts.js)</li>
+<li>conditionizr.min.js and conditionizr.js enqueued</li>
+<li>/css/conditionizr/ added with browser styles</li>
+<li>/js/conditionizr/ added with browser scripts</li>
+</ul></li>
+<li>Shortened ViewPort meta tag with user scalable enabled</li>
+</ul>
+
+<h2 id="1.2.509december2012">1.2.5 (09 December, 2012)</h2>
+
+<ul>
+<li>Added SVG support in scripts.js for SVG graphics</li>
+<li>Shorten DOM ready function call to shorthand</li>
+<li>Removed web app capable meta tag, kept viewport</li>
+<li>CSS3 Media Queries JavaScript polyfill added to header.php</li>
+<li>Included default .wrapper style for fluid-first responsive approach</li>
+<li>Upgraded jQuery to 1.8.3</li>
+<li>Split stylesheets with separate call for Normalize as reset</li>
+<li>Global Box Sizing and Font-Smoothing on all elements</li>
+</ul>
+
+<h2 id="1.2.415october2012">1.2.4 (15 October, 2012)</h2>
+
+<ul>
+<li>Custom Comments callback - wp_list_comments(&#8216;type=comment&amp;callback=html5blankcomments&#8217;); editable comments now in functions.php</li>
+<li>Custom default Gravatar now built in, with demo gravatar.jpg inside the &#8216;img&#8217; folder, swap it out</li>
+<li>Changed date format from the_date to the_time(&#8216;F j, Y&#8217;)</li>
+<li>Changed time format from the_time to the_time(&#8216;g:i a&#8217;)</li>
+<li>Changes above show the exact same when parsed, but have been changed due to the way WordPress works, which only shows one &#8216;Date&#8217; for posts created on the same day. <a href="http://codex.wordpress.org/Function_Reference/the_date">More here</a>.</li>
+</ul>
+
+<h2 id="1.2.313october2012">1.2.3 (13 October, 2012)</h2>
+
+<ul>
+<li>Responsive Thumbnail support, added a function which removes width and height dynamic attributes from thumbnail</li>
+</ul>
+
+<h2 id="1.2.209october2012">1.2.2 (09 October, 2012)</h2>
+
+<ul>
+<li>Modified function - jQuery CDN fallback to get_template_directory_uri() instead of bloginfo(&#8216;template_url&#8217;)</li>
+<li>Add Support for Custom Header</li>
+<li>Tweaked support for Custom Background, added default color and placeholder background image</li>
+</ul>
+
+<h2 id="1.2.107october2012">1.2.1 (07 October, 2012)</h2>
+
+<ul>
+<li>Custom callback for wp_nav_menu, now in functions.php with html5blank_nav(); in header.php</li>
+<li>JavaScript added to &#8216;scripts.js&#8217;, hides URL bar after page load on iPhone/iPad, great for responsive projects</li>
+<li>Meta tag &#8216;apple-mobile-web-app-capable&#8217; added to header.php</li>
+<li>Meta tag &#8216;apple-mobile-web-app-status-bar-style&#8217; added to header.php</li>
+</ul>
+
+<h2 id="1.2.003october2012">1.2.0 (03 October, 2012)</h2>
+
+<ul>
+<li>Merged pull request from J-Rabe</li>
+<li>Localisation-support for all theme strings and empty *.pot for further translations</li>
+<li>German translation added by J-Rabe</li>
+<li>Functions.php includes new function &#8216;load_theme_textdomain&#8217; for language support</li>
+<li>Loop.php created to handle the Loop core, with get_template_part inclusion for relevant files</li>
+<li>Loop.php includes conditional result for search results</li>
+<li>Swapped bloginfo(&#8216;template_url&#8217;); for echo get_template_directory_uri(); on Logo + Favicon</li>
+<li>home_url instead of bloginfo(&#8216;home&#8217;)</li>
+</ul>
+
+<h2 id="1.1.202october2012">1.1.2 (02 October, 2012)</h2>
+
+<ul>
+<li>Merged pull request for comments.php code changes</li>
+<li>Merged pull request to remove &#8216;rel&#8217; attribute from categories</li>
+<li>Filter added to remove autop paragraph function from Excerpts (Manual only)</li>
+<li>Filter added to allow shortcodes to execute inside Excerpts (Manual only)</li>
+<li>Filter added to strip autop tags altogether from Excerpts</li>
+</ul>
+
+<h2 id="1.1.130september2012">1.1.1 (30 September, 2012)</h2>
+
+<ul>
+<li>Enhanced author template</li>
+<li>Enhanced 404 page with return home link</li>
+<li>Semantic HTML enhancements</li>
+<li>Added &#8216;published by the_author&#8217; hooks as a default</li>
+<li>Suggested include of WordPress Core CSS styles, now added</li>
+</ul>
+
+<h2 id="1.1.029september2012">1.1.0 (29 September, 2012)</h2>
+
+<ul>
+<li>Core template files restructure</li>
+<li>Semantic HTML enhancements</li>
+<li>Google analytics (optimised) dynamically loaded through functions.php in footer</li>
+<li>jQuery protocol relative fallback dynamically loaded through functions.php in footer</li>
+<li>Hardcoded footer.php content (analytics and jquery) removed as it&#8217;s dynamically loaded now</li>
+<li>The Loop &#8216;if, while, the&#8217; all inline, now inside parent section element</li>
+<li>Pagination links brought inside section element, outside of The Loop after our article</li>
+<li>Section elements brought outside The Loop to hold all page content</li>
+<li>The Loop &#8216;else&#8217; content wrapper in article tag for markup/layout consistencies</li>
+<li>Post ID and Post Class added to article elements</li>
+<li>Category support for &#8216;the category&#8217; title</li>
+<li>Enhanced Default Template page and Template Demo Page (page.php and template-demo.php)</li>
+<li>Threaded comments support</li>
+<li>Few obvious annotations removed</li>
+<li>Small typo in annotation &#8216;function.php&#8217; changed to &#8216;functions.php&#8217;</li>
+<li>Update theme default logo with new branding</li>
+<li>CSS tweak for default hyperlink color change to match Logo blue</li>
+</ul>
+
+<h2 id="1.0.228september2012">1.0.2 (28 September, 2012)</h2>
+
+<ul>
+<li>Update CDN and local jQuery fallbacks from 1.8.1 to 1.8.2</li>
+<li>Conditional page loads script added to functions.php</li>
+<li>Added Custom Background support into functions.php</li>
+<li>Remove WordPress Admin bar by default</li>
+<li>Remove &#8216;text/css&#8217; from enqueued stylesheet</li>
+<li>Updated screenshot.png logo to new HTML5 Blank branding</li>
+<li>CSS change, :focus changed to input:focus as FireFox was adding focus styles to any element</li>
+<li>CSS change, new Chrome updates renders fonts thicker, reduced font-weight on body from 400 to 300</li>
+<li>CSS change, create non-semantic section below media queries, moved text-selection colors etc</li>
+<li>CSS change, default font-family for h1-h6 Helvetica Neue with Helvetica/Arial fallbacks (previous Georgia)</li>
+<li>CSS header theme details updated to new URL</li>
+<li>Move toddmotto.com/html5blank/ to new html5blank.com domain</li>
+<li>Favicon support for theme directory favicon.ico</li>
+<li>Apple touch icon support, drag into root folder</li>
+<li>LICENSE.md and README.md added and fully updated</li>
+</ul>
+
+<h2 id="1.0.127september2012">1.0.1 (27 September, 2012)</h2>
+
+<ul>
+<li>Commit CHANGELOG.md</li>
+<li>Commit README.md</li>
+<li>Commit of Empty Fonts folder with readme.txt inside (for GitHub detection)</li>
+</ul>
+
+<h2 id="1.0.016september2012">1.0.0 (16 September, 2012)</h2>
+
+<ul>
+<li>Initial commit</li>
+</ul>
+
+</body>
+</html>

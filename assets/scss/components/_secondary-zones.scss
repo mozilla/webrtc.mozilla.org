@@ -1,0 +1,102 @@
+// secondary-zones.scss
+// -----------------------------------------------------------------
+
+.secondary-zones {
+  background-image: url('assets/img/header-bg.png');
+  background-position: 50% 0;
+  .zone {
+    width: 50%;
+    float: left;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    h3 {
+      font-size: 24px;
+      margin-top: 0;
+      vertical-align: middle;
+      margin-bottom: 30px;
+      &:before {
+        content: '';
+        background-size: cover;
+        margin-right: 15px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .zone-contact {
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+    margin-right: -1px;
+    h3 {
+      &:before {
+        background-image: url('assets/img/icon-contact-white.svg');
+        width: 32px;
+        height: 30px;
+      }
+    }
+    .btn-outline {
+      display: block;
+      width: 75%;
+      margin: 0 auto;
+      padding: 7px 12px;
+      border-radius: 20px;
+    }
+  }
+  .zone-signup {
+    padding-left: 30px;
+    border-left: 1px solid #fff;
+    h3 {
+      &:before {
+        background-image: url('assets/img/icon-mailing-list-white.svg');
+        width: 32px;
+        height: 32px;
+      }
+    }
+    .signup-form {
+      position: relative;
+      input {
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 8px 12px;
+        width: 100%;
+        font-size: 14px;
+      }
+      button {
+        background: transparent;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        position: absolute;
+        right: 10px;
+        top: 6px;
+      }
+    }
+    p {
+      font-size: 13px;
+      font-weight: 400;
+      text-align: left;
+      line-height: 1.5em;
+      margin: 0;
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

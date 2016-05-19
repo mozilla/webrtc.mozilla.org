@@ -1,0 +1,71 @@
+// site-footer.scss
+// -----------------------------------------------------------------
+
+.site-footer {
+  background: #37373B;
+  color: #fff;
+  padding: 60px 0;
+  font-size: 13px;
+  font-weight: 400;
+  .footer-logo {
+    color: rgba(255,255,255,.24);
+    font-family: $font-family-branding;
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    position: relative;
+    top: -7px;
+  }
+  p {
+    margin: 0;
+  }
+  .copyright {
+    font-style: italic;
+  }
+  a {
+    color: $link-inverted;
+  }
+  .footer-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    li {
+      display: inline-block;
+      padding: 0 7px 0 10px;
+      border-left: 1px solid rgba(255,255,255,.25);
+      &:first-child {
+        border-left: 0;
+        a {
+          &:before {
+            content: '';
+            background: url('assets/img/icon-rss-blue-inverted.svg');
+            height: 11px;
+            width: 11px;
+            background-size: cover;
+            display: inline-block;
+            margin-right: 7px
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

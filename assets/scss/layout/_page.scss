@@ -1,0 +1,103 @@
+// page.scss
+// -----------------------------------------------------------------
+
+body {
+  font-weight: 300;
+  background-image: url('assets/img/bg-texture.png');
+  background-size: 133px;
+}
+
+main {
+  background: #fff;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.page-title {
+  font-size: 38px;
+  margin: 0 0 40px;
+}
+
+.page-feature {
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+  .spot-illustration {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .narrative-title {
+    font-size: 42px;
+    margin: 0 0 30px;
+    line-height: 54px;
+  }
+}
+
+.narrative-columns {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 60px;
+  .column-title {
+    margin: 0 0 25px;
+    .column-icon {
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      margin-right: 15px;
+      vertical-align: middle;
+      height: 25px;
+      width: 25px;
+    }
+  }
+  .column-content {
+    ul {
+      li {
+        line-height: 1.83;
+      }
+    }
+  }
+}
+
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  body {
+    background: none;
+  }
+
+  main {
+    width: auto;
+  }
+
+}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {
+
+  main {
+    width: auto;
+  }
+
+}
+
+// Up to tablet
+@media (max-width: 767px) {
+
+  main {
+    width: auto;
+  }
+  
+}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

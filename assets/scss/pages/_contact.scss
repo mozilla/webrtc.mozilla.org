@@ -1,0 +1,86 @@
+// contact.scss
+// -----------------------------------------------------------------
+
+.contact-us {
+  .gform_wrapper {
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="url"] {
+      @extend .form-control;
+      height: 40px;
+      font-size: 14px !important;
+      padding: 6px 12px !important;
+    }
+    .ginput_complex {
+      label {
+        font-weight: 300;
+      }
+    }
+    .gfield_radio,
+    .gfield_checkbox {
+      li {
+        padding-left: 10px !important;
+      }
+      label {
+        font-weight: normal;
+      }
+    }
+    textarea {
+      @extend .form-control;
+      padding: 6px 12px !important;
+    }
+    &.gf_browser_chrome ul.gform_fields li.gfield input[type=radio] {
+      margin-left: .1em !important;
+    }
+    .gfield {
+      @extend .form-group;
+    }
+    .gfield_description {
+      font-style: italic;
+    }
+    .top_label {
+      input.medium, 
+      select.medium {
+        width: 100% !important;
+      }
+    }
+    .gform_button {
+      @extend .btn;
+      @extend .btn-primary;
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 0 65px;
+      margin-top: 30px;
+    }
+  }
+
+  .gform_confirmation_wrapper {
+    .gform_confirmation_message {
+      @extend .alert;
+      @extend .alert-success;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

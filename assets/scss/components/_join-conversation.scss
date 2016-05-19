@@ -1,0 +1,39 @@
+// join-conversation.scss
+// -----------------------------------------------------------------
+
+.join-conversation {
+  text-align: center;
+  h3 {
+    font-size: 42px;
+    margin: 0 0 30px;
+    .icon-join-conversation {
+      display: inline-block;
+      width: 36px;
+      height: 47px;
+      margin-right: 20px;
+      vertical-align: middle;
+      background-image: url('assets/img/icon-join-conversation.svg');
+      background-size: 36px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}

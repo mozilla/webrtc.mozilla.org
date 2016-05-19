@@ -1,0 +1,42 @@
+// archive.scss
+// -----------------------------------------------------------------
+
+.archive {
+  .archive-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 30px;
+    strong {
+      margin-left: 10px;
+    }
+  }
+  &.tag {
+    .archive-title {
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+// Media Queries
+// --------------------------------------------------
+
+// Large desktop and up
+@media (min-width: 1200px) {}
+
+// Desktop to large desktop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Tablet to desktop
+@media (min-width: 768px) and (max-width: 991px) {}
+
+// Up to tablet
+@media (max-width: 767px) {}
+
+// Up to landscape phone
+@media (max-width: 480px) {}
