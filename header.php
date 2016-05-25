@@ -1,10 +1,10 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
-	<head <?php do_action( 'add_head_attributes' ); ?>>
+  <head <?php do_action( 'add_head_attributes' ); ?>>
 
     <!-- Title -->
     <!-- =================================== -->
-		<title><?php wp_title(''); ?></title>
+    <title><?php wp_title(''); ?></title>
     
     <!-- Styles -->
     <!-- =================================== -->
@@ -14,8 +14,8 @@
     <!-- Meta -->
     <!-- =================================== -->
     <meta charset="<?php bloginfo('charset'); ?>">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Webfont -->
     <!-- =================================== -->
@@ -23,11 +23,11 @@
 
     <!-- Wordpress Generated -->
     <!-- =================================== -->
-		<?php wp_head(); ?>
+    <?php wp_head(); ?>
 
-	</head>
+  </head>
 
-	<body <?php body_class(); ?>>
+  <body <?php body_class(); ?>>
     <!-- Google Analytics -->
     <!-- =================================== -->
     <?php get_template_part( 'includes/analyticstracking' ); ?>
@@ -73,16 +73,16 @@
         <section class="home-hero">
           <div class="container">
             <div class="row">
-              <div class="col-md-8">
+              <div class="col-md-4 col-md-push-8">  
+                <img class="illustration" src="<?php echo get_template_directory_uri(); ?>/assets/img/illustration-home.svg">
+              </div>
+              <div class="col-md-8 col-md-pull-4">
                 <h2><?php the_field('homepage_hero_title', 'option'); ?></h2>
                 <p><?php the_field('homepage_hero_summary', 'option'); ?></p>
                 <div class="actions">
                   <a href="/learn-more" class="btn-outline">Learn More</a>
                   <a href="/get-involved" class="btn-outline">Get Involved</a>
                 </div>
-              </div>
-              <div class="col-md-4">  
-                <img class="illustration" src="<?php echo get_template_directory_uri(); ?>/assets/img/illustration-home.svg">
               </div>
             </div>
           </div>
