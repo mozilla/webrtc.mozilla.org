@@ -12,6 +12,16 @@
     padding-bottom: 60px;
     border-bottom: 1px solid #e6e6e6;
     margin-bottom: 60px;
+    overflow-wrap: break-word;
+    a {
+      word-wrap: break-word;
+      -ms-word-break: break-all;
+      word-break: break-word;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
   }
   .column-one {
     .column-title {
@@ -31,6 +41,7 @@
     }
   }
   .companies {
+    @include clearfix();
     a {
       display: block;
       border-bottom: 5px solid #fff;
@@ -38,6 +49,9 @@
       line-height: 130px;
       background: #f7f7f7;
       text-align: center;
+      img {
+        margin: 0;
+      }
       &:first-child {
         border-radius: 12px 12px 0 0;
       }
@@ -62,6 +76,11 @@
       }
     }
   }
+  .column-content {
+    ul {
+      margin: 0;
+    }
+  }
 }
 
 
@@ -75,10 +94,123 @@
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .page-template-template-learn-more {
+    .page-feature {
+      .narrative-title {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    .companies {
+      margin-bottom: 60px;
+      a {
+        float: left;
+        width: 33.33333%;
+        border: 0;
+        &:first-child {
+          border-radius: 12px 0 0 12px;
+          border-right: 5px solid #fff;
+        }
+        &:last-child {
+          border-radius: 0 12px 12px 0;
+          border-left: 5px solid #fff;
+        }
+      }
+      .mozilla {
+        img {
+          height: 35px;
+        }
+      }
+      .telenor {
+        img {
+          height: 76px;
+        }
+      }
+      .cisco {
+        img {
+          height: 75px;
+        }
+      }
+    }
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .page-template-template-learn-more {
+    .page-feature {
+      .narrative-title {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    .webrtc-summary {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    .companies {
+      margin-bottom: 30px;
+      a {
+        float: left;
+        width: 33.33333%;
+        border: 0;
+        height: 75px;
+        line-height: 75px;
+        &:first-child {
+          border-radius: 6px 0 0 6px;
+          border-right: 5px solid #fff;
+        }
+        &:last-child {
+          border-radius: 0 6px 6px 0;
+          border-left: 5px solid #fff;
+        }
+      }
+      .mozilla {
+        img {
+          height: 15px;
+        }
+      }
+      .telenor {
+        img {
+          height: 46px;
+        }
+      }
+      .cisco {
+        img {
+          height: 45px;
+        }
+      }
+    }
+  }
+
+}
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .page-template-template-learn-more {
+    .companies {
+      margin-bottom: 30px;
+      a {
+        border-bottom: 5px solid #fff;
+        height: 75px;
+        line-height: 75px;
+        float: none;
+        width: 100%;
+        &:first-child {
+          border-radius: 12px 12px 0 0;
+          border-right: 0;
+        }
+        &:last-child {
+          border-radius: 0 0 12px 12px;
+          border: 0;
+        }
+      }
+    }
+  }
+
+}

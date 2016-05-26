@@ -17,6 +17,11 @@
       background-repeat: no-repeat;
     }
   }
+  p {
+    br {
+      display: none;
+    }
+  }
 }
 
 
@@ -33,7 +38,32 @@
 @media (min-width: 768px) and (max-width: 991px) {}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .join-conversation {
+    h3 {
+      font-size: 30px;
+      .icon-join-conversation {
+        display: block;
+        margin: 0 auto 30px;
+      }
+    }
+  }
+
+}
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .join-conversation {
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      br {
+        display: block;
+      }
+    }
+  }
+
+}

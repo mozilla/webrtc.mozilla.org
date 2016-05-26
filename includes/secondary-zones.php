@@ -7,7 +7,7 @@
     <div class="zone zone-signup">
       <h3>Stay up-to-date with Advancing WebRTC</h3>
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-12 col-lg-5">
           <form class="signup-form">
             <input type="email" class="form-control" value="" placeholder="Email address">
             <button type="submit">
@@ -15,7 +15,7 @@
             </button>
           </form>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-12 col-lg-7">
           <p>
             Don’t worry; we hate spam with a passion.<br>
             You can unsubscribe with one click.
