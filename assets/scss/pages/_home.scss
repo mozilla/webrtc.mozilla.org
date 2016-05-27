@@ -2,6 +2,9 @@
 // -----------------------------------------------------------------
 
 .home {
+  .site-header {
+    background-size: cover;
+  }
   .home-hero {
     margin: 50px 0 0;
     color: #fff;
@@ -17,6 +20,9 @@
       .btn-outline {
         margin-right: 27px;
       }
+    }
+    .illustration-wrapper {
+      text-align: center;
     }
     .illustration {
       width: 100%;
@@ -35,10 +41,95 @@
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .home {
+    .home-hero {
+      text-align: center;
+      .actions {
+        margin-top: 40px;
+        .btn-outline {
+          margin-right: 27px;
+        }
+      }
+      .illustration {
+        width: 50%;
+        margin: 0 0 50px;
+      }
+    }
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .home {
+    .site-header {
+      padding-bottom: 50px;
+    }
+    .home-hero {
+      text-align: center;
+      h2 {
+        font-size: 36px;
+      }
+      .actions {
+        .btn-outline {
+          margin-right: 27px;
+        }
+      }
+      .illustration {
+        width: 50%;
+        margin: 0 0 50px;
+      }
+    }
+  }
+
+}
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .home {
+    .site-header {
+      padding-bottom: 30px;
+    }
+    .home-hero {
+      margin: 30px 0 0;
+      h2 {
+        font-size: 30px;
+      }
+      .illustration {
+        width: 80%;
+        margin: 0 0 30px;
+      }
+      .actions {
+        margin-top: 30px;
+        .btn-outline {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+}
+
+// Up to landscape phone
+@media (max-width: 400px) {
+
+  .home {
+    .home-hero {
+      .actions {
+        .btn-outline {
+          display: block;
+          margin: 0;
+          text-align: center;
+          &:first-child {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+}
