@@ -17,6 +17,9 @@
         font-weight: 300;
       }
     }
+    .gfield_required {
+      color: $state-danger-text;
+    }
     .gfield_radio,
     .gfield_checkbox {
       li {
@@ -47,11 +50,11 @@
     }
     .gform_button {
       @extend .btn;
-      @extend .btn-primary;
-      height: 50px;
-      line-height: 50px;
-      font-size: 18px;
-      font-weight: 700;
+      @extend .btn-outline;
+      @extend .btn-outline-blue;
+      height: 40px;
+      line-height: 39px;
+      border-radius: 20px;
       padding: 0 65px;
       margin-top: 30px;
     }
