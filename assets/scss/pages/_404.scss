@@ -58,19 +58,52 @@
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .error404 {
+    padding-top: 50px;
+    h2 {
+      margin: 0 0 50px;
+    }
+    .error-message {
+      margin-bottom: 30px;
+    }
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .error404 {
+    padding-top: 30px;
+    h1 {
+      font-size: 85px;
+    }
+    h2 {
+      margin: 0 0 30px;
+    }
+    .error-message {
+      margin-bottom: 30px;
+    }
+  }
+
+}
 
 // Up to landscape phone
 @media (max-width: 480px) {
 
   .error404 {
-    padding-top: 60px;
-  }
-  .error-message {
-    margin-bottom: 30px;
+    padding-top: 30px;
+    h1 {
+      font-size: 85px;
+    }
+    h2 {
+      margin: 0 0 30px;
+    }
+    .error-message {
+      margin-bottom: 0;
+    }
   }
 
 }

@@ -39,4 +39,22 @@
 @media (max-width: 767px) {}
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .archive {
+    .archive-title {
+      margin-bottom: 30px;
+      strong {
+        margin-left: 5px;
+      }
+    }
+    &.tag {
+      .archive-title {
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+}
