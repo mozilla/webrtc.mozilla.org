@@ -15,6 +15,7 @@
   }
   .post-title {
     font-size: 42px;
+    line-height: 1.25em;
     margin: 0 0 20px;
     a {
       color: $text-color;
@@ -49,8 +50,12 @@
   }
   .tags {
     margin-top: 50px;
+    position: relative;
+    padding-left: 40px;
     img {
-      margin-right: 12px;
+      position: absolute;
+      left: 0;
+      top: 5px;
     }
     ul {
       list-style-type: none;
@@ -60,6 +65,7 @@
       li {
         display: inline-block;
         margin-right: 3px;
+        margin-bottom: 3px;
         a {
           display: block;
           font-size: 14px;
@@ -82,10 +88,41 @@
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .type-post {
+    .post-title {
+      font-size: 36px;
+    }
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .type-post {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    .post-title {
+      font-size: 36px;
+    }
+    .author {
+      margin: 0 0 30px;
+    }
+    .tags {
+      margin-top: 30px;
+    }
+  }
+
+}
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .type-post {
+    .post-title {
+      font-size: 30px;
+    }
+  }
+}

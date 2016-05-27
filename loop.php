@@ -25,7 +25,9 @@
 		<?php if( has_tag() ) : ?>
 			<div class="tags">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-tags.svg" alt="Tags">
-				<?php the_tags( '<ul><li>', '</li><li>', '</li></ul>' ); ?>
+				<span class="tags-wrapper">
+					<?php the_tags( '<ul><li>', '</li><li>', '</li></ul>' ); ?>
+				</span>
 			</div>
 		<?php endif; ?>
 		
