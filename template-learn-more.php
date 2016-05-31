@@ -56,7 +56,7 @@
 
           <!-- HELPFUL RESOURCES == -->
           <!-- ==================== -->
-          <section class="helpful-resources">
+          <section id="helpful-resources" class="helpful-resources">
             <h3>
               <span class="icon-helpful-resources"></span>
               Helpful Resources
