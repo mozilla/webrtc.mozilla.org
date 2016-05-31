@@ -12,6 +12,19 @@
     padding-bottom: 60px;
     border-bottom: 1px solid #e6e6e6;
     margin-bottom: 60px;
+    overflow-wrap: break-word;
+    a {
+      word-wrap: break-word;
+      -ms-word-break: break-all;
+      word-break: break-word;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
+  }
+  .narrative-columns {
+    margin-bottom: 0;
   }
   .column-one {
     .column-title {
@@ -31,6 +44,7 @@
     }
   }
   .companies {
+    @include clearfix();
     a {
       display: block;
       border-bottom: 5px solid #fff;
@@ -38,6 +52,9 @@
       line-height: 130px;
       background: #f7f7f7;
       text-align: center;
+      img {
+        margin: 0;
+      }
       &:first-child {
         border-radius: 12px 12px 0 0;
       }
@@ -62,6 +79,76 @@
       }
     }
   }
+  .column-content {
+    ul {
+      margin: 0;
+    }
+  }
+  .helpful-resources {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    border-bottom: 1px solid #e6e6e6;
+    h3 {
+      font-size: 42px;
+      margin: 0 0 30px;
+      text-align: center;
+      .icon-helpful-resources {
+        display: inline-block;
+        width: 53px;
+        height: 33px;
+        margin-right: 20px;
+        vertical-align: middle;
+        background-image: url('assets/img/icon-helpful-resources.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+    .resources-summary {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .resources-category {
+      margin-bottom: 35px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0 0 15px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        li {
+          width: 25%;
+          padding: 0 7.5px;
+          margin: 0 0 15px;
+          a {
+            display: block;
+            border: 1px solid #eee;
+            box-shadow: 0 1px 3px rgba(0,0,0,.03);
+            padding: 15px;
+            &:after {
+              content: '';
+              width: 9px;
+              height: 9px;
+              display: inline-block;
+              background-image: url('assets/img/icon-external-link.svg');
+              background-size: 100%;
+              margin-left: 5px;
+              top: -3px;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -72,13 +159,201 @@
 @media (min-width: 1200px) {}
 
 // Desktop to large desktop
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .page-template-template-learn-more {
+    .helpful-resources {
+      .resources-category {
+        ul {
+          li {
+            width: 33.3333%;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // Tablet to desktop
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .page-template-template-learn-more {
+    .page-feature {
+      .narrative-title {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    .companies {
+      margin-bottom: 60px;
+      a {
+        float: left;
+        width: 33.33333%;
+        border: 0;
+        &:first-child {
+          border-radius: 12px 0 0 12px;
+          border-right: 5px solid #fff;
+        }
+        &:last-child {
+          border-radius: 0 12px 12px 0;
+          border-left: 5px solid #fff;
+        }
+      }
+      .mozilla {
+        img {
+          height: 35px;
+        }
+      }
+      .telenor {
+        img {
+          height: 76px;
+        }
+      }
+      .cisco {
+        img {
+          height: 75px;
+        }
+      }
+    }
+    .helpful-resources {
+      .resources-category {
+        ul {
+          li {
+            width: 33.3333%;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // Up to tablet
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+  .page-template-template-learn-more {
+    .page-feature {
+      .narrative-title {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    .webrtc-summary {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    .companies {
+      margin-bottom: 30px;
+      a {
+        float: left;
+        width: 33.33333%;
+        border: 0;
+        height: 75px;
+        line-height: 75px;
+        &:first-child {
+          border-radius: 6px 0 0 6px;
+          border-right: 5px solid #fff;
+        }
+        &:last-child {
+          border-radius: 0 6px 6px 0;
+          border-left: 5px solid #fff;
+        }
+      }
+      .mozilla {
+        img {
+          height: 15px;
+        }
+      }
+      .telenor {
+        img {
+          height: 46px;
+        }
+      }
+      .cisco {
+        img {
+          height: 45px;
+        }
+      }
+    }
+    .helpful-resources {
+      padding: 30px 0;
+      margin: 0 0 30px;
+      h3 {
+        font-size: 24px;
+        text-align: left;
+        margin: 0 0 15px;
+        .icon-helpful-resources {
+          margin-right: 15px;
+          height: 25px;
+          width: 36px;
+        }
+      }
+      .resources-summary {
+        margin: 0 0 30px;
+      }
+      p {
+        text-align: left;
+      }
+      .resources-category {
+        margin-bottom: 0;
+        ul {
+          li {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .page-template-template-learn-more {
+    .companies {
+      margin-bottom: 30px;
+      a {
+        border-bottom: 5px solid #fff;
+        height: 75px;
+        line-height: 75px;
+        float: none;
+        width: 100%;
+        &:first-child {
+          border-radius: 12px 12px 0 0;
+          border-right: 0;
+        }
+        &:last-child {
+          border-radius: 0 0 12px 12px;
+          border: 0;
+        }
+      }
+    }
+    .helpful-resources {
+      .resources-category {
+        margin-bottom: 30px;
+        ul {
+          display: block;
+          li {
+            width: 100%;
+            padding: 0;
+            margin: 0 0 3px;
+            p {
+              margin: 0;
+            }
+            a {
+              padding: 0;
+              border: 0;
+              box-shadow: none;
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

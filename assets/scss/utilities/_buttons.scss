@@ -34,6 +34,18 @@
       background-size: cover;
     }
   }
+  &.btn-outline-blue {
+    color: $link-color;
+    border-color: $link-color;
+    &:before {
+      background: url('assets/img/icon-arrow-r-blue.svg');
+    }
+    &:hover {
+      &:before {
+        background: url('assets/img/icon-arrow-r-white.svg');
+      }
+    }
+  }
 }
 
 // .btn-primary {

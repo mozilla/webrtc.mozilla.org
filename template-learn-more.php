@@ -54,6 +54,68 @@
             </div>
           </section>
 
+          <!-- HELPFUL RESOURCES == -->
+          <!-- ==================== -->
+          <section id="helpful-resources" class="helpful-resources">
+            <h3>
+              <span class="icon-helpful-resources"></span>
+              Helpful Resources
+            </h3>
+            <div class="resources-summary">
+              <p>
+                Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+            </div>
+            <div class="resources-category">
+              <h4 class="category-title">Specs</h4>
+              <ul>
+                <?php if( have_rows('specs') ): while ( have_rows('specs') ) : the_row(); ?>
+
+                  <li><?php the_sub_field('spec_resource_link'); ?></li>
+
+                <?php endwhile; ?>
+
+                <?php else: ?>
+
+                  <p>Sorry, no resources currently.</p>
+
+                <?php endif; ?>
+              </ul>
+            </div>
+            <div class="resources-category">
+              <h4 class="category-title">More info / Demos</h4>
+              <ul>
+                <?php if( have_rows('more_info_demos') ): while ( have_rows('more_info_demos') ) : the_row(); ?>
+
+                  <li><?php the_sub_field('info_demo_resource_link'); ?></li>
+
+                <?php endwhile; ?>
+
+                <?php else: ?>
+
+                  <p>Sorry, no resources currently.</p>
+
+                <?php endif; ?>
+              </ul>
+            </div>
+            <div class="resources-category">
+              <h4 class="category-title">Helpful Diagrams</h4>
+              <ul>
+                <?php if( have_rows('helpful_diagrams') ): while ( have_rows('helpful_diagrams') ) : the_row(); ?>
+
+                  <li><?php the_sub_field('helpful_diagrams_resource_link'); ?></li>
+
+                <?php endwhile; ?>
+
+                <?php else: ?>
+
+                  <p>Sorry, no resources currently.</p>
+
+                <?php endif; ?>
+              </ul>
+            </div>
+          </section>
+
         <?php endwhile; ?>
 
         <?php endif; ?>

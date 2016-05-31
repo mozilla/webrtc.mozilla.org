@@ -32,4 +32,13 @@
 @media (max-width: 767px) {}
 
 // Up to landscape phone
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .single {
+    .back-to-blog {
+      margin-bottom: 15px;
+      float: right;
+    }
+  }
+
+}
