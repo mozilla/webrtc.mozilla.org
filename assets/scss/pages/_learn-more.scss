@@ -52,6 +52,7 @@
       line-height: 130px;
       background: #f7f7f7;
       text-align: center;
+      padding: 0 5px;
       img {
         margin: 0;
       }
@@ -71,6 +72,7 @@
     .telenor {
       img {
         height: 81px;
+        max-width: 100%;
       }
     }
     .cisco {
