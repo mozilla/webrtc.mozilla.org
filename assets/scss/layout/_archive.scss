@@ -1,7 +1,8 @@
 // archive.scss
 // -----------------------------------------------------------------
 
-.archive {
+.archive,
+.search-results {
   .archive-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -9,15 +10,12 @@
     font-size: 16px;
     border-bottom: 1px solid #e6e6e6;
     padding-bottom: 30px;
+    line-height: 1.5em;
     strong {
       margin-left: 10px;
     }
-  }
-  &.tag {
-    .archive-title {
-      img {
-        margin-right: 10px;
-      }
+    img {
+      margin-right: 10px;
     }
   }
 }
