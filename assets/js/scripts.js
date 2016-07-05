@@ -5,6 +5,16 @@
 		'use strict';
 		
 		// DOM ready, take it away
+    $('#search-toggle').click(function() {
+      $('#search-form').addClass('is--visible');
+      $('#search-form form').width($('#navbar-collapse .navbar-nav').width());
+    });
+
+    $('#search-cancel').click(function() {
+      $('#search-form').removeClass('is--visible');
+      $('#search-form form').width(0);
+    });
+
 
     // shrink navbar
     $('#scroll-div').scroll(function() {

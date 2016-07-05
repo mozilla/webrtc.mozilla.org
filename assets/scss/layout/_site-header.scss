@@ -32,6 +32,75 @@
     margin: 0;
     float: right;
   }
+  .search-form {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    visibility: hidden;
+    .search-cancel {
+      background: transparent;
+      border: 0;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      position: absolute;
+      right: 5px;
+      top: 2px;
+      opacity: .8;
+      &:hover {
+        opacity: 1;
+      }
+      img {
+        width: 18px;
+      }
+    }
+    form {
+      width: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: visibility 0s linear 100ms, width 100ms linear, opacity 100ms linear;
+      .search-input {
+        background: darken($brand-primary, 15%);
+        border: 0;
+        box-shadow: none;
+        border-radius: 100px;
+        font-size: 16px;
+        color: #fff;
+        width: 100%;
+        padding: 4px 12px;
+        &:focus {
+          outline: 0;
+        }
+        &::-webkit-input-placeholder {
+           color: rgba(255,255,255,.75);
+        }
+        &:-moz-placeholder {
+           color: rgba(255,255,255,.75);  
+        }
+        &::-moz-placeholder {
+           color: rgba(255,255,255,.75);  
+        }
+        &:-ms-input-placeholder {  
+           color: rgba(255,255,255,.75);  
+        }
+      }
+      .search-submit {
+        display: none;
+      }
+    }
+    &.is--visible {
+      visibility: visible;
+      form {
+        //width: 300px;
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0s;
+      }
+    }
+  }
+  .navbar-collapse {
+    position: relative;
+  }
   .navbar {
     margin: 0;
     transition: background 50ms;
