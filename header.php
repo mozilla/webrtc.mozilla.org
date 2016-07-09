@@ -68,9 +68,13 @@
                   <!-- Collect the nav links for toggling -->
                   <div class="collapse navbar-collapse" id="navbar-collapse">
                     <?php primary_nav(); ?>
-                    <button class="search-toggle">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-search-white.svg">
+                    <button id="search-toggle" class="search-toggle">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-search-white.svg" alt="Search">
                     </button>
+                    <div id="search-form" class="search-form">
+                      <?php get_template_part('searchform'); ?>
+                      <button id="search-cancel" class="search-cancel"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-cancel-white.svg" alt="Cancel search"></button>
+                    </div>
                   </div>
                 </div>
               </nav>
