@@ -11,7 +11,7 @@
           <form class="signup-form">
             <input type="email" class="form-control" value="" placeholder="Email address">
             <button type="submit">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-circlearrow-r-blue.svg">
+              <span class="arrow"></span>
             </button>
           </form>
         </div>

@@ -112,7 +112,9 @@
     font-size: 40px;
     padding: 0 0 0 15px;
     line-height: 50px;
-    //transition: font-size 50ms;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
   }
   .navbar-nav {
     li {
@@ -120,8 +122,14 @@
         font-weight: 700;
         font-size: 14px;
         text-transform: uppercase;
+        span {
+          border-bottom: 1px solid transparent;
+          transition: border-color 150ms;
+        }
         &:hover {
-          text-decoration: underline;
+          span {
+            border-bottom-color: #fff;
+          }
         }
       }
       &.open {
@@ -134,7 +142,9 @@
     }
     .current-menu-item {
       & > a {
-        text-decoration: underline;
+        span {
+          border-bottom-color: #fff;
+        }
       }
     }
     .dropdown-menu {
@@ -179,8 +189,9 @@
   .navbar.shrink {
     background: darken($brand-primary, 15%);
     .navbar-brand {
-      font-size: 30px;
-
+      font-size: 21px;
+      position: relative;
+      top: 2px;
     }
   }
   .navbar.stick {

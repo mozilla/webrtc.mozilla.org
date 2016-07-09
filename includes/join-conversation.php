@@ -4,6 +4,7 @@
     Ready to Join the Conversation?
   </h3>
   <p>
-    Dig into the <br><a class="link-arrow" target="_blank" href="https://groups.google.com/forum/#!forum/mozilla.dev.media">WebRTC Google Group</a>
+    Dig into the <br>
+    <a class="link-arrow" target="_blank" href="https://groups.google.com/forum/#!forum/mozilla.dev.media">WebRTC Google Group<span class="icon-arrow"><span class="arrow"></span></span></a>
   </p>
 </aside>

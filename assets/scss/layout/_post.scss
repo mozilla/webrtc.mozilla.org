@@ -20,6 +20,11 @@
     margin: 0 0 20px;
     a {
       color: $text-color;
+      transition: color 100ms;
+      &:hover {
+        color: $link-color;
+        text-decoration: none;
+      }
     }
   }
   .author {
