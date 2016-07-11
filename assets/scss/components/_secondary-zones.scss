@@ -58,7 +58,7 @@
       input {
         border-color: transparent;
         border-radius: 20px;
-        padding: 8px 12px;
+        padding: 8px 40px 8px 12px;
         width: 100%;
         font-size: 14px;
       }
@@ -69,7 +69,31 @@
         box-shadow: none;
         position: absolute;
         right: 10px;
-        top: 6px;
+        top: 8px;
+        transition: background 150ms, color 150ms;
+        border: 2px solid $link-color;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 24px;
+        .arrow {
+          display: inline-block;
+          background-image: url('assets/img/icon-arrow-r-blue.svg');
+          height: 9px;
+          width: 9px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          position: relative;
+          top: -4px;
+        }
+        &:hover {
+          background: $link-color;
+          color: #fff;
+          .arrow {
+            background-image: url('assets/img/icon-arrow-r-white.svg');
+          }
+        }
       }
     }
     p {
@@ -128,16 +152,16 @@
     .zone {
       float: none;
       width: auto;
-      margin: 0 -15px;
-      padding: 40px 15px;
+      margin: 0 -30px;
+      padding: 40px 30px;
     }
     .zone-contact {
-      padding-right: 15px;
+      padding-right: 30px;
       border: 0;
       border-bottom: 1px solid #fff;
     }
     .zone-signup {
-      padding-left: 15px;
+      padding-left: 30px;
       border: 0;
       .signup-form {
         margin-bottom: 30px;

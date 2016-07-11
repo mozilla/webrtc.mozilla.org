@@ -16,6 +16,7 @@
   padding: 4px 18px 4px 12px;
   font-size: 16px;
   font-weight: 700;
+  transition: background 150ms, color 150ms;
   &:before {
     content: '';
     background: url('assets/img/icon-arrow-r-white.svg');
@@ -34,47 +35,22 @@
       background-size: cover;
     }
   }
-  &.btn-outline-blue {
-    color: $link-color;
-    border-color: $link-color;
+}
+
+.btn-outline-blue {
+  color: $link-color;
+  border-color: $link-color;
+  &:before {
+    background: url('assets/img/icon-arrow-r-blue.svg');
+  }
+  &:hover {
+    background: $link-color;
+    color: #fff;
     &:before {
-      background: url('assets/img/icon-arrow-r-blue.svg');
-    }
-    &:hover {
-      &:before {
-        background: url('assets/img/icon-arrow-r-white.svg');
-      }
+      background: url('assets/img/icon-arrow-r-white.svg');
     }
   }
 }
-
-// .btn-primary {
-//   background-color: #6E9C5C;
-//   #gradient > .vertical(#80B068,#659457);
-//   border-color: transparent;
-//   font-size: 24px;
-//   font-weight: 700;
-//   &:hover {
-//     background: #659457;
-//     border-color: transparent;
-//   }
-//   &:active {
-//     background: #659457;
-//     border-color: transparent;
-//     &:hover {
-//       background: #659457;
-//       border-color: transparent;
-//     }
-//   }
-//   &:disabled {
-//     background-color: #6E9C5C;
-//     border-color: transparent;
-//     &:hover {
-//       background: #659457;
-//       border-color: transparent;
-//     }
-//   }
-// }
 
 
 // Media Queries
