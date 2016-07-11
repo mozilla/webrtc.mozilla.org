@@ -31,6 +31,9 @@
     padding: 11.5px 20px;
     margin: 0;
     float: right;
+    &:focus {
+      outline: none;
+    }
   }
   .search-form {
     position: absolute;
