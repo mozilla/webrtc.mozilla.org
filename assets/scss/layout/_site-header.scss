@@ -78,13 +78,13 @@
            color: rgba(255,255,255,.75);
         }
         &:-moz-placeholder {
-           color: rgba(255,255,255,.75);  
+           color: rgba(255,255,255,.75);
         }
         &::-moz-placeholder {
-           color: rgba(255,255,255,.75);  
+           color: rgba(255,255,255,.75);
         }
-        &:-ms-input-placeholder {  
-           color: rgba(255,255,255,.75);  
+        &:-ms-input-placeholder {
+           color: rgba(255,255,255,.75);
         }
       }
       .search-submit {
@@ -135,11 +135,19 @@
           }
         }
       }
-      &.open {
-        & > a {
+      &.menu-item-has-children:hover {
+        .dropdown-toggle {
           background: #fff !important;
-          color: $link-hover-color !important;
+          color: #006191 !important;
           border-radius: 4px 4px 0 0;
+        }
+        .dropdown-menu {
+          display: block;
+        }
+      }
+      &.open {
+        .dropdown-menu {
+          display: none;
         }
       }
     }
