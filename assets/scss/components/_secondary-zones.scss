@@ -5,8 +5,8 @@
   background-image: url('assets/img/header-bg.png');
   background-position: 50% 0;
   .zone {
-    width: 50%;
-    float: left;
+    //width: 50%;
+    //float: left;
     color: #fff;
     padding: 40px 0;
     text-align: center;
@@ -25,9 +25,9 @@
     }
   }
   .zone-contact {
-    border-right: 1px solid #fff;
-    padding-right: 30px;
-    margin-right: -1px;
+    //border-right: 1px solid #fff;
+    //padding-right: 30px;
+    //margin-right: -1px;
     h3 {
       &:before {
         background-image: url('assets/img/icon-contact-white.svg');
@@ -37,7 +37,7 @@
     }
     .btn-outline {
       display: block;
-      width: 75%;
+      width: 350px;
       margin: 0 auto;
       padding: 7px 12px;
       border-radius: 20px;
@@ -156,9 +156,9 @@
       padding: 40px 30px;
     }
     .zone-contact {
-      padding-right: 30px;
+      //padding-right: 30px;
       border: 0;
-      border-bottom: 1px solid #fff;
+      //border-bottom: 1px solid #fff;
     }
     .zone-signup {
       padding-left: 30px;

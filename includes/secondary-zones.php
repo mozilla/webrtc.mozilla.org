@@ -4,7 +4,7 @@
       <h3>Get in touch with us</h3>
       <a href="<?php get_bloginfo( 'wpurl' ); ?>/contact-us" class="btn-outline">Contact Us</a>
     </div>
-    <div class="zone zone-signup">
+    <!-- <div class="zone zone-signup">
       <h3>Stay up-to-date with Advancing WebRTC</h3>
       <div class="row">
         <div class="col-md-12 col-lg-5">
@@ -22,6 +22,6 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </aside>
