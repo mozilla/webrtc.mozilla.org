@@ -5,7 +5,7 @@
     <!-- Title -->
     <!-- =================================== -->
     <title><?php wp_title(''); ?></title>
-    
+
     <!-- Styles -->
     <!-- =================================== -->
     <link href="<?php echo get_template_directory_uri(); ?>/assets/icons/favicon.png" rel="shortcut icon">
@@ -29,11 +29,11 @@
     <?php get_template_part( 'includes/analyticstracking' ); ?>
 
     <div id="mobile-container" class="mobile-container">
-      
+
       <!--/* Mobile menu ============== */-->
       <!--/* ========================== */-->
       <?php get_template_part( 'includes/mobile-menu' ); ?>
-      
+
       <div class="mobile-pusher">
         <div id="scroll-div" class="mobile-content">
           <div class="mobile-content-inner">
@@ -83,7 +83,7 @@
                 <section class="home-hero">
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-4 col-md-push-8 illustration-wrapper">  
+                      <div class="col-md-4 col-md-push-8 illustration-wrapper">
                         <img class="illustration" src="<?php echo get_template_directory_uri(); ?>/assets/img/illustration-home.svg">
                       </div>
                       <div class="col-md-8 col-md-pull-4">
@@ -96,6 +96,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </section>
               <?php endif; ?>
             </header>
