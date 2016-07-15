@@ -62,9 +62,7 @@
               Helpful Resources
             </h3>
             <div class="resources-summary">
-              <p>
-                Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              </p>
+              <?php the_field('helpful_resources_summary'); ?>
             </div>
             <div class="resources-category">
               <h4 class="category-title">Specs</h4>
