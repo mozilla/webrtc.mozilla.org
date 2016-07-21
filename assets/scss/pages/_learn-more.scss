@@ -135,6 +135,12 @@
             border: 1px solid #eee;
             box-shadow: 0 1px 3px rgba(0,0,0,.03);
             padding: 15px;
+            span {
+              color: $text-color;
+              font-size: 13px;
+              line-height: 1.5em !important;
+              display: inline-block;
+            }
             &:after {
               content: '';
               width: 9px;
