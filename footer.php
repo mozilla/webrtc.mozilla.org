@@ -1,6 +1,8 @@
 						<!-- Secondary zones -->
 						<!-- =================================== -->
-						<?php get_template_part( 'includes/secondary-zones' ); ?>
+						<?php if ( !is_page('contact-us') ) : ?>
+							<?php get_template_part( 'includes/secondary-zones' ); ?>
+						<?php endif; ?>
 
 						<footer class="site-footer" role="contentinfo">
 							<div class="container">
@@ -11,7 +13,8 @@
 									<div class="col-sm-6">
 										<!-- copyright -->
 										<p class="copyright">
-											&copy; 2005-<?php echo date('Y'); ?> Mozilla Developer Network and individual <br>contributors. Content is available under these <a target="_blank" href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">licenses</a>.
+											Except where otherwise noted, content on this site is licensed under the <a target="_blank" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version. &nbsp;<br>
+											<a target="_blank" href="https://www.mozilla.org/en-US/about/legal/">Legal</a> &nbsp; <a target="_blank" href="https://www.mozilla.org/en-US/about/legal/terms/mozilla/">Terms &amp; Conditions</a>
 										</p>
 									</div>
 									<div class="col-sm-6 col-md-4">
