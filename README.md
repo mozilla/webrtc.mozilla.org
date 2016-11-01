@@ -1,15 +1,25 @@
-# webrtc.mozilla.org
+# Mozilla WebRTC 
+
+[Mozilla WebRTC](http://webrtc.mozilla.org)
 
 Wordpress website for WebRTC blog built using [HTML5 Blank](https://github.com/toddmotto/html5blank/blob/master/README.md).
 
+## Installation
+
+To install the Node dependencies:
+
+    npm install
+
 ## Development
 
-1. Clone the repo into your local WordPress theme directory and navigate to that folder
-2. `[~] npm install`
-3. Update `devUrl` in `./gulp/config.js` to reflect your local development hostname
-    - Example: `devUrl: 'http://localhost:8888'`
-4. `[~] gulp serve`
+To begin developing locally follow these steps:
 
-### Build Commands
+    gulp serve
+    
+*Note: If necessary you can change `devUrl` in `./gulp/config.js` to reflect your local development hostname.*
 
-- `gulp serve` -- Compile assets when file changes are made, start BrowserSync session
+## Deploy
+
+To deploy changes to WP Engine you will need FTP access.
+
+@TODO: Provide an easier deployment method (e.g. auto-deploy git branches)
