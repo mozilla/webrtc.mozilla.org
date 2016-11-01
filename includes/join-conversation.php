@@ -5,6 +5,6 @@
   </h3>
   <p>
     Dig into the <br>
-    <a class="link-arrow" target="_blank" href="https://groups.google.com/forum/#!forum/mozilla.dev.media">Mozilla Media Google Group<span class="icon-arrow"><span class="arrow"></span></span></a>
+    <a class="link-arrow" target="_blank" href="https://groups.google.com/forum/#!forum/mozilla.dev.media">Mozilla Media Newsgroup<span class="icon-arrow"><span class="arrow"></span></span></a>
   </p>
 </aside>
