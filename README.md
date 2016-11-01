@@ -12,7 +12,7 @@ To install the Node dependencies:
 
 ## Development
 
-To begin developing locally follow these steps:
+To begin developing:
 
     gulp serve
     
