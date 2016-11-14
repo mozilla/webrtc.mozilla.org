@@ -90,8 +90,8 @@
                         <h2><?php the_field('homepage_hero_title', 'option'); ?></h2>
                         <p><?php the_field('homepage_hero_summary', 'option'); ?></p>
                         <div class="actions">
-                          <a href="<?php get_bloginfo( 'wpurl' ); ?>/learn-more" class="btn-outline">Learn More</a>
-                          <a href="<?php get_bloginfo( 'wpurl' ); ?>/get-involved" class="btn-outline">Get Involved</a>
+                          <a href="https://blog.mozilla.org/webrtc/learn-more" class="btn-outline">Learn More</a>
+                          <a href="https://blog.mozilla.org/webrtc/get-involved" class="btn-outline">Get Involved</a>
                         </div>
                       </div>
                     </div>
