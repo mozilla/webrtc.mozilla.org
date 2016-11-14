@@ -61,7 +61,7 @@
                       <span class="icon-bar"></span>
                     </button>
                     <!-- Site logo -->
-                    <a class="navbar-brand" href="/">
+                    <a class="navbar-brand" href="https://blog.mozilla.org/webrtc">
                       Advancing WebRTC
                     </a>
                   </div>
