@@ -2,7 +2,7 @@
   <div class="container">
     <div class="zone zone-contact">
       <h3>Get in touch with us</h3>
-      <a href="<?php get_bloginfo( 'wpurl' ); ?>/contact-us" class="btn-outline">Contact Us</a>
+      <a href="https://blog.mozilla.org/webrtc/contact-us" class="btn-outline">Contact Us</a>
     </div>
     <!-- <div class="zone zone-signup">
       <h3>Stay up-to-date with Advancing WebRTC</h3>
