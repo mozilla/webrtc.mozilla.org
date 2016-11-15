@@ -36,12 +36,12 @@
 			<div class="error-message">
 				<h1>404</h1>
 				<h2>Page not found</h2>
-				<p>Unfortunately, we were unable to find that page or it does not exist.<br />Please <a href="/">return</a> to the home page.</p>
+				<p>Unfortunately, we were unable to find that page or it does not exist.<br />Please <a href="https://blog.mozilla.org/webrtc">return</a> to the home page.</p>
 			</div>
 			<div class="site-logo-wrapper">
 				<!-- ==== Site Logo ==== -->
 				<div class="site-logo">
-					<a href="/">
+					<a href="https://blog.mozilla.org/webrtc">
             Advancing WebRTC
           </a>
 				</div>

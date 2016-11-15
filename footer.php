@@ -1,8 +1,6 @@
 						<!-- Secondary zones -->
 						<!-- =================================== -->
-						<?php if ( !is_page('contact-us') ) : ?>
-							<?php get_template_part( 'includes/secondary-zones' ); ?>
-						<?php endif; ?>
+						<?php get_template_part( 'includes/secondary-zones' ); ?>
 
 						<footer class="site-footer" role="contentinfo">
 							<div class="container">

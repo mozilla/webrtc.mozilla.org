@@ -4,7 +4,7 @@
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-md-10 col-md-offset-1">
-	      	<a href="/" class="back-to-blog">&larr; View all posts</a>
+	      	<a href="https://blog.mozilla.org/webrtc" class="back-to-blog">&larr; View all posts</a>
 
 				<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
