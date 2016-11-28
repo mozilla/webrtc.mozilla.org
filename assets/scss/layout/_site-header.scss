@@ -200,14 +200,6 @@
 }
 
 .site-header {
-  .navbar.shrink {
-    background: darken($brand-primary, 15%);
-    .navbar-brand {
-      font-size: 21px;
-      position: relative;
-      top: 2px;
-    }
-  }
   .navbar.stick {
     margin-top: 0 !important;
     position: fixed;
@@ -216,6 +208,12 @@
     width: 100%;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
+    background: darken($brand-primary, 15%);
+    .navbar-brand {
+      font-size: 21px;
+      position: relative;
+      top: 2px;
+    }
   }
 }
 
